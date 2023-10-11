@@ -1,11 +1,73 @@
-.hello_massage{
-    color:red;
-    font-size:7em;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 800;
-    text-align: center;
+* {
+    box-sizing: border-box;
 }
 
-.more_text{
-    color:blue;
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #f2eee3;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+.main {
+    margin: 100px auto 0;
+    max-width: 840px;
+}
+
+.recommend {
+}
+
+.recommend__list,
+.recommend__visual-list {
+    padding: 0;
+}
+
+.recommend__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.recommend__list-item,
+.recommend__visual-list-item {
+    list-style: none;
+}
+.recommend__list-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    width: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.recommend__item-title{
+    color: #303030;
+    font-size: 16px;
+}
+
+.recommend__item-visual{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.recommend__visual-list-item{
+    font-size: 14px;
+    color: #7B9557;
+}
+
+.recommend__visual-list-item:not(:first-child){
+    margin: 5px 0 0;
 }
